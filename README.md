@@ -86,8 +86,8 @@ Desenvolvedores que participaram da resolução dos exercícios:
 
 - **Suerdo Flaubert**
     - [GitHub](https://github.com/Suerdo)
-    - [LinkedIn](https://www.linkedin.com/in/suerdo/)
-    - [E-mail](mailto:seu-melhor-email@hotmail.com)
+    - [LinkedIn](https://www.linkedin.com/in/suerdo-flaubert-78b3a4194/)
+    - [E-mail](mailto:suerdocampos@gmail.com)
 
 - **Vinícius Andrade**
     - [GitHub](https://github.com/viniciusdsandrade)
