@@ -66,8 +66,8 @@ Desenvolvedores que participaram da resolução dos exercícios:
 
 - **Aldemir Carlos**
     - [GitHub](https://github.com/aldemaas)
-    - [LinkedIn](https://www.linkedin.com/in/aldemaas/)
-    - [E-mail](mailto:seu-melhor-email@hotmail.com)
+    - [LinkedIn](https://www.linkedin.com/in/aldemir-carlos/)
+    - [E-mail](mailto:aldemirc22@gmail.com)
 
 - **Kauê Alexandre**
     - [GitHub](https://github.com/bugkaue)
