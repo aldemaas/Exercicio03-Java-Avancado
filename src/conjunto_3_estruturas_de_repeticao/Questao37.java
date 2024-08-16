@@ -34,11 +34,11 @@ public class Questao37 {
         */
 
         /*
-        Obs2: O cálculo do fatorial de forma recursiva pode resultar em estouro de pilha
-        (StackOverflowError) para valores muito grandes de n, devido à profundidade excessiva
-         da pilha de chamadas recursivas. Para valores de n acima de 11660(na máquina), o cálculo recursivo
-         do fatorial pode exceder o limite de profundidade da pilha de chamadas, resultando em um estouro de pilha. Por isso, é recomendável usar a abordagem iterativa para calcular
-         fatoriais de valores muito grandes.
+        Obs2: O cálculo do fatorial de forma recursiva pode levar a um erro de "StackOverflowError"
+        para valores muito grandes de n. Isso ocorre devido à profundidade excessiva da pilha de chamadas recursivas.
+        Em minha máquina, por exemplo, para valores de n acima de 11660, o cálculo recursivo do fatorial excede o
+        limite de profundidade da pilha, resultando em um estouro de pilha.
+        Portanto, para valores muito grandes de n, recomenda-se utilizar a abordagem iterativa para calcular o fatorial.
          */
 
         entrada.close();

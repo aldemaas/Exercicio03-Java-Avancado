@@ -35,14 +35,23 @@ public class Questao60 {
         System.out.print("Digite a quantidade de anos: ");
         quantidadeAnos = getInteiroNaoNegativo(entrada);
 
+        // Calcula o valor máximo possível para determinar a largura necessária
+        double valorMaximo = valorInicial * Math.pow(1 + taxaMensal, 12 * quantidadeAnos);
+        int larguraCampo = Math.max(12, String.format("%.2f", valorMaximo).length());
+
         System.out.println("\nEvolução da dívida:");
-        System.out.println("Anos   Jan     Fev     Mar     Abr     Mai     Jun     Jul     Ago     Set     Out     Nov     Dez");
+        System.out.print("Anos   ");
+        String[] meses = {"Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"};
+        for (String mes : meses) {
+            System.out.printf("%-" + larguraCampo + "s", mes);
+        }
+        System.out.println();
 
         valorAtual = valorInicial;
         for (int ano = 2007; ano < 2007 + quantidadeAnos; ano++) {
-            System.out.printf("%-4d ", ano); // Alinhamento à esquerda com 4 espaços
+            System.out.printf("%-6d", ano); // Alinhamento à esquerda com 6 espaços
             for (int mes = 1; mes <= 12; mes++) {
-                System.out.printf("%7.2f ", valorAtual); // Alinhamento à direita com 7 espaços e 2 casas decimais
+                System.out.printf("%-" + larguraCampo + ".2f", valorAtual); // Formatação com largura dinâmica
                 valorAtual += valorAtual * taxaMensal;
             }
             System.out.println();

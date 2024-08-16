@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 import static Utils.Data.*;
 import static Utils.UtilsConjunto2.*;
+import static java.time.LocalDate.now;
 
 /**
  * @author Vinícius dos Santos Andrade
@@ -25,13 +26,13 @@ public class Questao18 {
         byte diaAtual, diaNascimento, mesNascimento, mesAtual;
         short anoNascimento, anoAtual;
 
-        System.out.println("Dia nascimento: ");
+        System.out.print("Dia nascimento: ");
         diaNascimento = getDia(entrada);
 
-        System.out.println("Mês nascimento: ");
+        System.out.print("Mês nascimento: ");
         mesNascimento = getMes(entrada);
 
-        System.out.println("Ano nascimento: ");
+        System.out.print("Ano nascimento: ");
         anoNascimento = getAno(entrada);
 
         if (isValidDate(diaNascimento, mesNascimento, anoNascimento)) {
@@ -43,8 +44,7 @@ public class Questao18 {
 
         // Para evitar que o usuário insira a data de hoje inválida
         // Vou pegar a data atual do Sistema Operacional
-
-        LocalDate dataAtual = LocalDate.now();
+        LocalDate dataAtual = now();
 
         diaAtual = (byte) dataAtual.getDayOfMonth();
         mesAtual = (byte) dataAtual.getMonthValue();

@@ -39,7 +39,6 @@ public class Questao41 {
         } while (palpite != numeroSorteado);
 
         System.out.println("Parabéns! Você acertou o número sorteado (" + numeroSorteado + ") em " + tentativas + " tentativas.");
-
         entrada.close();
     }
 }

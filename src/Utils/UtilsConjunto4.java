@@ -55,10 +55,10 @@ public class UtilsConjunto4 {
                 if (valor >= 0) {
                     validInput = true; // Entrada válida
                 } else {
-                    System.out.println("Entrada inválida. Por favor, insira um número inteiro não negativo.");
+                    System.out.print("Entrada inválida. Por favor, insira um número inteiro não negativo: ");
                 }
             } catch (NumberFormatException e) {
-                System.out.println("Entrada inválida. Por favor, insira um número inteiro válido.");
+                System.out.print("Entrada inválida. Por favor, insira um número inteiro válido: ");
             }
         } while (!validInput);
 

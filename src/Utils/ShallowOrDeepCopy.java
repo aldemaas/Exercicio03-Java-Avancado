@@ -4,17 +4,19 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 /**
- * The {@code ShallowOrDeepCopy} class provides methods for verifying and creating deep copies of objects.
- * It handles both shallow and deep copying based on the object's properties.
+ * A classe {@code ShallowOrDeepCopy} fornece métodos para verificar e criar cópias profundas de objetos.
+ * Ela lida tanto com cópias superficiais quanto profundas, com base nas propriedades do objeto.
+ *
+ * @author Vinícius dos Santos Andrade
  */
 public class ShallowOrDeepCopy {
 
     /**
-     * Verifies if the input object is {@link Cloneable} and returns a deep copy if possible.
+     * Verifica se o objeto de entrada é {@link Cloneable} e retorna uma cópia profunda, se possível.
      *
-     * @param data The object to be verified and copied.
-     * @return If {@code data} is {@link Cloneable}, a deep copy of {@code data}.
-     *         Otherwise, the original {@code data}.
+     * @param data O objeto a ser verificado e copiado.
+     * @return Se {@code data} for {@link Cloneable}, uma cópia profunda de {@code data}.
+     *         Caso contrário, o {@code data} original.
      */
     public static Object verifyAndCopy(Object data) {
         if (data instanceof Cloneable)
@@ -23,10 +25,10 @@ public class ShallowOrDeepCopy {
     }
 
     /**
-     * Creates a deep copy of the input object.
+     * Cria uma cópia profunda do objeto de entrada.
      *
-     * @param data The object to be deeply copied.
-     * @return A deep copy of {@code data}.
+     * @param data O objeto a ser copiado profundamente.
+     * @return Uma cópia profunda de {@code data}.
      */
     public static Object deepCopy(Object data) {
         try {

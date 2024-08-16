@@ -1,6 +1,5 @@
 package conjunto_3_estruturas_de_repeticao;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 import static Utils.UtilsConjunto3.getInteiroNaoNegativo;
@@ -23,9 +22,9 @@ public class Questao38 {
         numero = getInteiroNaoNegativo(entrada);
 
         if (isPrimo(numero)) {
-            System.out.println("O número " + numero + " é primo.");
+            System.out.println(numero + " é primo.");
         } else {
-            System.out.println("O número " + numero + " não é primo.");
+            System.out.println(numero + " não é primo.");
         }
 
         entrada.close();

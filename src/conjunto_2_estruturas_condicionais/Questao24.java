@@ -41,8 +41,8 @@ public class Questao24 {
         }
 
         entrada.close();
-
-        // Observação: Fiz a classe 'Data' na disciplina de Orientação a Objetos e a reutilizei aqui.
+        // Observação: Fiz a classe 'Data' na disciplina de Orientação a Objetos no Colégio Técnico de Campinas (COTUCA-UNICAMP)
+        // Vou reaproveitar seus métodos estáticos para validar a data.
     }
 
     /**
