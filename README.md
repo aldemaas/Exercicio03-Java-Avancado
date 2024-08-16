@@ -30,7 +30,7 @@ Este conjunto foca na utilização de estruturas de decisão para criar programa
 ### **Conjunto 3: Programas com Estruturas de Repetição**
 Este conjunto explora a repetição de operações para resolver problemas que envolvem iteração.
 
-- **Exibição de Números:** Exibe números em intervalos específicos, como pares e ímpares, dentro de um determinado intervalo.
+- **Exibição de Números:** Exibe números em intervalos específicos, como pares e ímpares, num determinado intervalo.
 - **Fatorial de um Número:** Calcula o fatorial de um número fornecido pelo usuário.
 - **Números Primos:** Verifica se um número é primo ou não.
 - **Média de Idades:** Calcula a média das idades de um grupo de pessoas.
@@ -57,7 +57,7 @@ git clone https://github.com/aldemaas/Exercicio03-Java-Avancado.git
 - [Java 21 LTS](https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html)
 - [IntelliJ IDEA Ultimate 2024](https://www.jetbrains.com/idea/)
 - [Git](https://git-scm.com/)
-- [Github Copilot ](https://github.com/features/copilot/)
+- [GitHub Copilot](https://github.com/features/copilot/)
 
 ---
 ## ✍️ Autores:
