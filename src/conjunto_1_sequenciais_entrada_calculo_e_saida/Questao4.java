@@ -8,13 +8,13 @@ public class Questao4 {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Digite a primeira nota do aluno");
+        System.out.print("Digite a primeira nota do aluno: ");
         double nota1 = sc.nextDouble();
-        System.out.println("Digite a segunda nota do aluno");
+        System.out.print("Digite a segunda nota do aluno: ");
         double nota2 = sc.nextDouble();
-        System.out.println("Digite a terceira nota do aluno");
+        System.out.print("Digite a terceira nota do aluno: ");
         double nota3 = sc.nextDouble();
-        System.out.println("Digite a quarta nota do aluno");
+        System.out.print("Digite a quarta nota do aluno: ");
         double nota4 = sc.nextDouble();
 
         double mediaAluno = (nota1 + nota2 + nota3 + nota4) / 4;
