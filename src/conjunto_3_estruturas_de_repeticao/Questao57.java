@@ -6,9 +6,9 @@ public class Questao57 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Me informe duas datas para mostrar os dias validos entre elas no formato dd/mm/yyyy");
-        System.out.println("Primeira data:");
+        System.out.println("Menor data:");
         String data1 = sc.nextLine();
-        System.out.println("Segunda data:");
+        System.out.println("Maior data:");
         String data2 = sc.nextLine();
         String[] auxData1 = data1.split("/");
         String[] auxData2 = data2.split("/");
@@ -174,7 +174,13 @@ public class Questao57 {
             }else{
                 int bi = 28;
                 if (ano1 % 4 == 0) {
-                    bi = 29;
+                    if (ano1 % 100 == 0) {
+                        if (ano1 % 400 == 0) {
+                            bi = 29;
+                        }
+                    } else {
+                        bi = 29;
+                    }
                 }
                 for(int i = dia1+1; i<= bi; i++){
                     if(i<= 9){
