@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Questao55 {
 
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         double valorMensal = 50.00;
@@ -18,9 +19,10 @@ public class Questao55 {
             double min = sc.nextDouble();
             if(ligacao.equals("v")){
                 if(min > minBonus && minBonus>0){
+                    min = min - minBonus;
+                    minBonus=0;
                     if(min > minMensal){
-                        double aux = min - minMensal - minBonus;
-                        minBonus = 0;
+                        double aux = min - minMensal;
                         minMensal = 0;
                         valorMensal = valorMensal+(aux*0.20);
                         System.out.printf("Disponivel ainda %.2f minutos e %.2f minutos bonus,\nvalor a pagar %.2f\n",
@@ -30,8 +32,7 @@ public class Questao55 {
                         s_n = sc.nextLine();
                         continue;
                     }
-                    minMensal = minMensal - (min - minBonus);
-                    minBonus = 0;
+                    minMensal = minMensal - min;
                     System.out.printf("Disponivel ainda %.2f minutos e %.2f minutos bonus,\nvalor a pagar %.2f\n",
                             minMensal,minBonus,valorMensal);
                     System.out.println("Gostaria de outra ligação s - sim e n - não");
