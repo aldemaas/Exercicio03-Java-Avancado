@@ -15,7 +15,7 @@ public class Questao36 {
         int menorNum = Math.min(num1, num2);
         int maiorNum = Math.max(num1, num2);
 
-        System.out.println("Números ímpares entre " + menorNum + " e " + maiorNum + ":");
+        System.out.println("Números ímpares entre: " + menorNum + " e " + maiorNum + ":");
         for (int i = menorNum + 1; i < maiorNum; i++) {
             if (i % 2 != 0) {
                 System.out.println(i);

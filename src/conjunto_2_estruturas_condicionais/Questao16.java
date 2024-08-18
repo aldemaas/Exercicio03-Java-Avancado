@@ -18,10 +18,10 @@ public class Questao16 {
         };
         //Validação mês
         if (month < 1 || month > 12) {
-            System.out.println("Mês inválido!");
+            System.out.println("Mês inválido !");
         }
         else {
-            // Validação com base no mês
+
             boolean validDay = true;
             switch (month) {
                 case 1:
