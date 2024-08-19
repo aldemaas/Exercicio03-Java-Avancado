@@ -19,7 +19,7 @@ public class Questao12 {
         } else if (media >= 7.0) {
             System.out.println("Parabéns, você foi aprovado!");
         } else if (media >= 5.0) {
-            System.out.println("Você está de recuperação. Terá de fazer a prova final");
+            System.out.println("Você está de recuperação.");
         }
         else{
             System.out.println("Você foi reprovado.");
