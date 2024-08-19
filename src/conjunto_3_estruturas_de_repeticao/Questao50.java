@@ -2,7 +2,7 @@ package conjunto_3_estruturas_de_repeticao;
 
 import java.util.Scanner;
 
-import static Utils.UtilsConjunto3.getInteiroNaoNegativo;
+import static utils.UtilsConjunto3.getInteiroNaoNegativo;
 
 /**
  * @author Vinícius dos Santos Andrade

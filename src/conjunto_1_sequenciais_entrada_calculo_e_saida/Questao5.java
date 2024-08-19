@@ -2,8 +2,8 @@ package conjunto_1_sequenciais_entrada_calculo_e_saida;
 
 import java.util.Scanner;
 
-import static Utils.UtilsConjunto1.getDoubleNaoNegativo;
-import static Utils.UtilsConjunto1.getQuantidadeMes;
+import static utils.UtilsConjunto1.getDoubleNaoNegativo;
+import static utils.UtilsConjunto1.getQuantidadeMes;
 
 /**
  * @author Vinícius dos Santos Andrade

@@ -2,7 +2,7 @@ package conjunto_2_estruturas_condicionais;
 
 import java.util.Scanner;
 
-import static Utils.UtilsConjunto2.*;
+import static utils.UtilsConjunto2.*;
 
 /**
  * @author Vinícius dos Santos Andrade
@@ -40,9 +40,9 @@ public class Questao24 {
             System.out.println("Data inválida.");
         }
 
-        entrada.close();
         // Observação: Fiz a classe 'Data' na disciplina de Orientação a Objetos no Colégio Técnico de Campinas (COTUCA-UNICAMP)
         // Vou reaproveitar seus métodos estáticos para validar a data.
+        entrada.close();
     }
 
     /**

@@ -1,9 +1,9 @@
-package Utils;
+package utils;
 
 import java.time.LocalDate;
 import java.util.Objects;
 
-import static Utils.ShallowOrDeepCopy.verifyAndCopy;
+import static utils.ShallowOrDeepCopy.verifyAndCopy;
 
 /**
  * @author Vinícius dos Santos Andrade
@@ -13,6 +13,9 @@ public class Data implements Comparable<Data>, Cloneable {
     private byte dia, mes;
     private short ano;
 
+    public Data() {
+    }
+
     public Data(byte dia, byte mes, short ano) {
 
         if (!isValidDate(dia, mes, ano))
@@ -21,9 +24,6 @@ public class Data implements Comparable<Data>, Cloneable {
         this.dia = dia;
         this.mes = mes;
         this.ano = ano;
-    }
-
-    public Data() {
     }
 
     public static boolean isValidDate(byte dia, byte mes, short ano) {

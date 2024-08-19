@@ -2,7 +2,7 @@ package conjunto_2_estruturas_condicionais;
 
 import java.util.Scanner;
 
-import static Utils.UtilsConjunto2.*;
+import static utils.UtilsConjunto2.*;
 
 /**
  * @author Vinícius dos Santos Andrade

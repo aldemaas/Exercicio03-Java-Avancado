@@ -2,8 +2,8 @@ package conjunto_4_estruturas_de_repeticao_aninhadas;
 
 import java.util.Scanner;
 
-import static Utils.UtilsConjunto4.getDoubleNaoNegativo;
-import static Utils.UtilsConjunto4.getInteiroNaoNegativo;
+import static utils.UtilsConjunto4.getDoubleNaoNegativo;
+import static utils.UtilsConjunto4.getInteiroNaoNegativo;
 
 /**
  * @author Vinícius dos Santos Andrade
@@ -19,6 +19,7 @@ public class Questao60 {
     2007 100,00 101,80 103,63 105,50 107,40 109,33 111,30 113,30 115,34 117,42 119,53 121,68
     2008 123,87 126,10 128,37 130,68 133,03 135,43 137,87 140,35 142,87 145,45 148,06 150,73
      */
+
     public static void main(String[] args) {
         System.out.println("Exercício 60 - Evolução de dívida");
         Scanner entrada = new Scanner(System.in);

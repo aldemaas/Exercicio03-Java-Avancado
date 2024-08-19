@@ -1,12 +1,12 @@
 package conjunto_2_estruturas_condicionais;
 
-import Utils.Data;
+import utils.Data;
 
 import java.time.LocalDate;
 import java.util.Scanner;
 
-import static Utils.Data.*;
-import static Utils.UtilsConjunto2.*;
+import static utils.Data.*;
+import static utils.UtilsConjunto2.*;
 import static java.time.LocalDate.now;
 
 /**
@@ -55,11 +55,12 @@ public class Questao18 {
 
         System.out.println("Idade do usuário: ");
         System.out.println("Em dias:     " + getIdadeEmDias(dataNascimento, hoje));
-        System.out.println("Em anos:     " + getIdadeEmSemanas(dataNascimento, hoje));
-        System.out.println("Em semanas:  " + getIdadeEmAnos(dataNascimento, hoje));
+        System.out.println("Em semanas:  " + getIdadeEmSemanas(dataNascimento, hoje));
         System.out.println("Em meses:    " + getIdadeEmMeses(dataNascimento, hoje));
         System.out.println("Em anos:     " + getIdadeEmAnos(dataNascimento, hoje));
 
+        // Observação: Fiz a classe 'Data' na disciplina de Orientação a Objetos no Colégio Técnico de Campinas (COTUCA-UNICAMP)
+        // Vou reaproveitar seus métodos estáticos para validar a data.
         entrada.close();
     }
 }
