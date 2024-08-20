@@ -2,17 +2,29 @@ package conjunto_3_estruturas_de_repeticao;
 
 import java.util.Scanner;
 
+/**
+ * @author Pedro Messias de Lucena Maia
+ */
 public class Questao51 {
+
+    /*
+    51. Exiba os n primeiros termos da seqüência de Tribonacci (soma dos três anteriores). Inicia
+    com 1,1 e 2.
+     */
     public static void main(String[] args) {
+        System.out.println("Exercício 51 - Exiba os n primeiros termos da sequência de Tribonacci (soma dos três anteriores). Inicia com 1,1 e 2.");
         Scanner sc = new Scanner(System.in);
         System.out.println("Digite o numero de termos da sequência de Tribonacci: ");
 
-        int n = sc.nextInt();
+        int n;
+
+        n = sc.nextInt();
         sc.close();
         // Validador
         if (n <= 0){
             System.out.println("O numero de termos deve ser positivo");
         }
+
         imprimirTribonacci(n);
     }
 

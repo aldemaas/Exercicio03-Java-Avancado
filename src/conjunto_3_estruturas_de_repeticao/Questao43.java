@@ -3,7 +3,13 @@ package conjunto_3_estruturas_de_repeticao;
 import java.util.Scanner;
 
 public class Questao43 {
+
+    /*
+    43. Calcule a média aritmética de 500 valores fornecidos pelo usuário.
+     */
+
     public static void main(String[] args) {
+        System.out.println("Exercício 43 - Calcule a média aritmética de 500 valores fornecidos pelo usuário.");
         Scanner sc = new Scanner(System.in);
 
         int quantidadeValores = 500;

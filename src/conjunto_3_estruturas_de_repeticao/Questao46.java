@@ -2,10 +2,19 @@ package conjunto_3_estruturas_de_repeticao;
 
 import java.util.Scanner;
 
+/**
+ * @author Aldemir Carlos Alves de Lima
+ */
 public class Questao46 {
 
+    /*
+    46. Determine a quantidade de homens e mulheres (separadamente) que são maiores de
+    idade, baseado numa lista de 200 pessoas.
+     */
     public static void main(String[] args) {
+        System.out.println("Exercício 46 - Quantidade de homens e mulheres maiores de idade.");
         Scanner sc = new Scanner(System.in);
+
         int homensMaiores = 0;
         int mulheresMaiores = 0;
 

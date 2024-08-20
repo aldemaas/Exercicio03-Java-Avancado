@@ -2,26 +2,45 @@ package conjunto_3_estruturas_de_repeticao;
 
 import java.util.Scanner;
 
+/**
+ * @author Kauê Alexandre dos Reis Santos
+ */
 public class Questao40 {
+
+    /*
+    40. Solicite ao usuário a idade de cada um componente de um grupo de pessoas. A quantidade
+    de pessoas também será determinada por ele.
+    Após o término da entrada, apresente:
+    a. a média das idades,
+    b. a maior idade,
+    c. a menor idade,
+    d. a quantidade de pessoas maior de idade.
+     */
+
     public static void main(String[] args) {
+        System.out.println("Exercício 40 - Média, maior e menor idade e quantidade de pessoas maiores de idade.");
         Scanner sc = new Scanner(System.in);
 
+        double mediaIdades;
+        int quantidadePessoas, somaIdades, maiorIdade,
+                menorIdade, quantidadeMaioresDeIdade, idade;
+
         System.out.println("Digite a quantidade de pessoas no grupo:");
-        int quantidadePessoas = sc.nextInt();
+        quantidadePessoas = sc.nextInt();
 
         if (quantidadePessoas <= 0) {
             System.out.println("A quantidade de pessoas deve ser maior que zero.");
             return;
         }
 
-        int somaIdades = 0;
-        int maiorIdade = Integer.MIN_VALUE;
-        int menorIdade = Integer.MAX_VALUE;
-        int quantidadeMaioresDeIdade = 0;
+        somaIdades = 0;
+        maiorIdade = Integer.MIN_VALUE;
+        menorIdade = Integer.MAX_VALUE;
+        quantidadeMaioresDeIdade = 0;
 
         for (int i = 0; i < quantidadePessoas; i++) {
             System.out.println("Digite a idade da pessoa " + (i + 1) + ":");
-            int idade = sc.nextInt();
+            idade = sc.nextInt();
 
             if (idade < 0) {
                 System.out.println("Idade inválida. A idade deve ser um número positivo.");
@@ -40,7 +59,7 @@ public class Questao40 {
             }
         }
 
-        double mediaIdades = (double) somaIdades / quantidadePessoas;
+        mediaIdades = (double) somaIdades / quantidadePessoas;
 
         System.out.println("Média das idades: " + mediaIdades);
         System.out.println("Maior idade: " + maiorIdade);
@@ -48,6 +67,5 @@ public class Questao40 {
         System.out.println("Quantidade de pessoas maiores de idade: " + quantidadeMaioresDeIdade);
 
         sc.close();
-
     }
 }

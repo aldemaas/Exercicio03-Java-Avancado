@@ -2,10 +2,22 @@ package conjunto_3_estruturas_de_repeticao;
 
 import java.util.Scanner;
 
+/**
+ * @author Kauê Alexandre dos Reis Santos
+ */
 public class Questao48 {
+
+    /*
+    48. Descida se um aluno será aprovado, reprovado por nota ou reprovado por faltas. Use o
+    sistema de avaliação da FAESA. Pergunte ao usuário a quantidade de notas para cálculo
+    da média semestral, sendo que todas elas possuem o mesmo peso.
+     */
+
     public static void main(String[] args) {
+        System.out.println("Exercício 48 - Verificação de aprovação, reprovação por nota ou por faltas.");
         Scanner sc = new Scanner(System.in);
         System.out.println("Digite a quantidade de notas para cálculo da média semestral:");
+
         int quantidadeNotas = sc.nextInt();
 
         if (quantidadeNotas <= 0) {
