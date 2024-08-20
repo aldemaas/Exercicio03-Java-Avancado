@@ -14,18 +14,13 @@ public class Questao21 {
 
         double emprestimoPossivel;
         switch (cargo.toLowerCase()) {
-            case "diretoria":
-                emprestimoPossivel = salario * 0.30;
-                break;
-            case "gerência":
-                emprestimoPossivel = salario * 0.25;
-                break;
-            case "operacional":
-                emprestimoPossivel = salario * 0.20;
-                break;
-            default:
+            case "diretoria" -> emprestimoPossivel = salario * 0.30;
+            case "gerência" -> emprestimoPossivel = salario * 0.25;
+            case "operacional" -> emprestimoPossivel = salario * 0.20;
+            default -> {
                 System.out.println("Cargo não reconhecido. Por favor, insira um cargo válido.");
                 return;
+            }
         }
 
         System.out.printf("O valor do empréstimo possível é: R$ %.2f%n", emprestimoPossivel);

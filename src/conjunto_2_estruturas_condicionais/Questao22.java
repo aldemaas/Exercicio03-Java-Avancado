@@ -6,16 +6,12 @@ public class Questao22 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Digite o dia da primeira data de aniversário: ");
+        System.out.print("Digite o dia e o mês da primeira data de aniversário: ");
         int dia1 = sc.nextInt();
-
-        System.out.print("Digite o mês da primeira data de aniversário: ");
         int mes1 = sc.nextInt();
 
-        System.out.print("Digite o dia da segunda data de aniversário: ");
+        System.out.print("Digite o dia e o mês da segunda data de aniversário: ");
         int dia2 = sc.nextInt();
-
-        System.out.print("Digite o mês da segunda data de aniversário: ");
         int mes2 = sc.nextInt();
 
         if (dia1 == dia2 && mes1 == mes2) {

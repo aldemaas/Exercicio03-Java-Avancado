@@ -21,7 +21,9 @@ public class Questao28 {
                 b = temp3;
             }
         }
-        System.out.println("Números em ordem crescente: " + a + ", " + b + ", " + c);
+
+        System.out.println("Números em ordem crescente: "
+                + a + ", " + b + ", " + c);
 
     }
 }
