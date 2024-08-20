@@ -9,7 +9,7 @@ public class Questao16 {
 
         int day = sc.nextInt();
 
-        System.out.println("Informe o número do mês.");
+        System.out.println("Informe o número do mês. ");
         int month = sc.nextInt();
 
         String[] mesesNome = {
