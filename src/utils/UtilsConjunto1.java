@@ -5,6 +5,31 @@ import java.util.Scanner;
 public class UtilsConjunto1 {
 
     /**
+     * Lê e retorna uma nota válida inserida pelo usuário.
+     * <p>
+     * Este metodo solicita ao usuário que insira uma nota, verificando se a entrada está
+     * dentro do intervalo válido (entre 0 e 10). Caso o usuário insira um valor fora desse
+     * intervalo, será exibida uma mensagem de erro e solicitada uma nova entrada até que
+     * um valor válido seja fornecido.
+     *
+     * @param sc        Um objeto Scanner para ler a entrada do usuário.
+     * @param mensagem  A mensagem a ser exibida ao solicitar a nota ao usuário.
+     * @return          Um valor do tipo double representando uma nota válida (entre 0 e 10).
+     */
+    public static double lerNota(Scanner sc, String mensagem) {
+        double nota;
+        do {
+            System.out.print(mensagem);
+            nota = sc.nextDouble();
+            if (nota < 0 || nota > 10) {
+                System.out.println("Nota inválida! A nota deve estar entre 0 e 10.");
+            }
+        } while (nota < 0 || nota > 10);
+        return nota;
+    }
+
+
+    /**
      * Lê e retorna um número do tipo double não negativo a partir da entrada do usuário.
      * <p>
      * A função solicita ao usuário que insira um número, e verifica se a entrada é um valor
