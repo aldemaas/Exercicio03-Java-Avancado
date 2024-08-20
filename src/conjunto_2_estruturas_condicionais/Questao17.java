@@ -1,64 +1,61 @@
 package conjunto_2_estruturas_condicionais;
 
-import java.util.HashMap;
-import java.util.Map;
+
 import java.util.Scanner;
 
 public class Questao17 {
     public static void main(String[] args) {
-
         Scanner sc = new Scanner(System.in);
+        System.out.print("Informe o dia do seu aniversário: ");
 
-        Map<Integer, String> meses = new HashMap<>();
-        meses.put(1, "Janeiro");
-        meses.put(2, "Fevereiro");
-        meses.put(3, "Março");
-        meses.put(4, "Abril");
-        meses.put(5, "Maio");
-        meses.put(6, "Junho");
-        meses.put(7, "Julho");
-        meses.put(8, "Agosto");
-        meses.put(9, "Setembro");
-        meses.put(10, "Outubro");
-        meses.put(11, "Novembro");
-        meses.put(12, "Dezembro");
+        int day = sc.nextInt();
 
+        System.out.print("Informe o número do mês: ");
+        int month = sc.nextInt();
 
-        Map<Integer, Integer> diasNoMes = new HashMap<>();
-        diasNoMes.put(1, 31);
-        diasNoMes.put(2, 28);
-        diasNoMes.put(3, 31);
-        diasNoMes.put(4, 30);
-        diasNoMes.put(5, 31);
-        diasNoMes.put(6, 30);
-        diasNoMes.put(7, 31);
-        diasNoMes.put(8, 31);
-        diasNoMes.put(9, 30);
-        diasNoMes.put(10, 31);
-        diasNoMes.put(11, 30);
-        diasNoMes.put(12, 31);
+        String[] mesesNome = {
+                "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+                "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
+        };
 
-        System.out.print("Digite o número do dia: ");
-        int dia = sc.nextInt();
-
-        System.out.print("Digite o número do mês: ");
-        int mes = sc.nextInt();
-
-        if (meses.containsKey(mes)) {
-            String nomeMes = meses.get(mes);
-            int maxDias = diasNoMes.get(mes);
-
-            if (dia >= 1 && dia <= maxDias) {
-                System.out.println("A data está correta: " + dia + " de " + nomeMes);
-                System.out.println("Seu signo é: " + obterSigno(dia, mes));
-            } else {
-                System.out.println("Dia inválido para o mês de " + nomeMes);
-            }
+        if (month < 1 || month > 12) {
+            System.out.println("Mês inválido!");
         } else {
-            System.out.println("Mês inválido.");
-        }
 
-        sc.close();
+            boolean validDay = true;
+            switch (month) {
+                case 2:
+                    if (day < 1 || day > 29) {
+
+                        validDay = false;
+                    }
+                    break;
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    if (day < 1 || day > 30) {
+                        validDay = false;
+                    }
+                    break;
+                default:
+                    if (day < 1 || day > 31) {
+                        validDay = false;
+                    }
+                    break;
+            }
+
+            if (!validDay) {
+                System.out.println("Dia inválido para este mês!");
+            } else {
+                String nomeMes = mesesNome[month - 1];
+                String signo = obterSigno(day, month);
+                System.out.println("Você nasceu no dia " + day + " de " + nomeMes);
+                System.out.println("Seu signo é: " + signo);
+            }
+
+            sc.close();
+        }
     }
 
     public static String obterSigno(int dia, int mes) {

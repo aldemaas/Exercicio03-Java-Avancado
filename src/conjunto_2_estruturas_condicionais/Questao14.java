@@ -8,23 +8,23 @@ public class Questao14 {
     public static void main(String[] args) {
 
         Map<String, Integer> meses = new HashMap<>();
-        meses.put("Janeiro", 1);
-        meses.put("Fevereiro", 2);
-        meses.put("Março", 3);
-        meses.put("Abril", 4);
-        meses.put("Maio", 5);
-        meses.put("Junho", 6);
-        meses.put("Julho", 7);
-        meses.put("Agosto", 8);
-        meses.put("Setembro", 9);
-        meses.put("Outubro", 10);
-        meses.put("Novembro", 11);
-        meses.put("Dezembro", 12);
+        meses.put("janeiro", 1);
+        meses.put("fevereiro", 2);
+        meses.put("março", 3);
+        meses.put("abril", 4);
+        meses.put("maio", 5);
+        meses.put("junho", 6);
+        meses.put("julho", 7);
+        meses.put("agosto", 8);
+        meses.put("setembro", 9);
+        meses.put("outubro", 10);
+        meses.put("novembro", 11);
+        meses.put("dezembro", 12);
 
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Digite o nome de um mês específico: ");
-        String mes = sc.nextLine().trim();
+        String mes = sc.nextLine().trim().toLowerCase();
 
         Integer numeroDoMes = meses.get(mes);
 
