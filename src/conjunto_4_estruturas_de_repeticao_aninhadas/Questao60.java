@@ -24,7 +24,7 @@ public class Questao60 {
         System.out.println("Exercício 60 - Evolução de dívida");
         Scanner entrada = new Scanner(System.in);
 
-        double valorInicial, taxaMensal, valorAtual;
+        double valorInicial, taxaMensal, valorMaximo;
         int quantidadeAnos;
 
         System.out.print("Digite o valor da dívida inicial: R$ ");
@@ -37,7 +37,7 @@ public class Questao60 {
         quantidadeAnos = getInteiroNaoNegativo(entrada);
 
         // Calcula o valor máximo possível para determinar a largura necessária
-        double valorMaximo = valorInicial * Math.pow(1 + taxaMensal, 12 * quantidadeAnos);
+        valorMaximo = valorInicial * Math.pow(1 + taxaMensal, 12 * quantidadeAnos);
         int larguraCampo = Math.max(12, String.format("%.2f", valorMaximo).length());
 
         System.out.println("\nEvolução da dívida:");
@@ -48,7 +48,16 @@ public class Questao60 {
         }
         System.out.println();
 
-        valorAtual = valorInicial;
+        imprimirEvolucaoDivida(valorInicial, taxaMensal, quantidadeAnos, larguraCampo);
+
+        entrada.close();
+    }
+
+    private static void imprimirEvolucaoDivida(double valorInicial,
+                                               double taxaMensal,
+                                               int quantidadeAnos,
+                                               int larguraCampo) {
+        double valorAtual = valorInicial;
         for (int ano = 2007; ano < 2007 + quantidadeAnos; ano++) {
             System.out.printf("%-6d", ano); // Alinhamento à esquerda com 6 espaços
             for (int mes = 1; mes <= 12; mes++) {
@@ -57,8 +66,6 @@ public class Questao60 {
             }
             System.out.println();
         }
-
-        entrada.close();
     }
 }
 
