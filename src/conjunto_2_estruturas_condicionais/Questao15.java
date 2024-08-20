@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Questao15 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Informe o ");
+        System.out.println("Informe o dia do seu aniversário.");
 
         int day = sc.nextInt();
 
