@@ -15,8 +15,14 @@ public class Questao55 {
                 "minutos");
         String s_n = "";
         do{
+            System.out.println("Tipo de ligação:");
             String ligacao = sc.nextLine();
+            System.out.println("Minutos");
             double min = sc.nextDouble();
+            while (min < 0){
+                System.out.println("Valor invalido! valor menor ou igual zero");
+                min = sc.nextDouble();
+            }
             if(ligacao.equals("v")){
                 if(min > minBonus && minBonus>0){
                     min = min - minBonus;
