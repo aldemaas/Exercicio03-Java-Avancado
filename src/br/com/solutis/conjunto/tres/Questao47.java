@@ -1,23 +1,31 @@
 package br.com.solutis.conjunto.tres;
 
+import java.util.Locale;
 import java.util.Scanner;
 
+/**
+ * @author Gabriel de Abreu Farias Azevedo
+ */
 public class Questao47 {
+
     /*
-     *   47. Leia uma relação de pacientes de uma clínica, cada um com o nome, o sexo, o peso, a
-     *   idade e a altura. Para sinalizar o fim da lista será fornecido “fim” no nome do último paciente.
-     *    Exiba um relatório contendo:
-     *    i. a quantidade de pacientes.
-     *    ii. a média de idade dos homens.
-     *    iii. a quantidade de mulheres com altura entre 1,60 e 1,70 e peso acima de 70kg.
-     *    iv. a quantidade de pessoas com idade entre 18 e 25.
-     *    v. o nome do paciente mais velho.
-     *    vi. o nome da mulher mais baixa.
-     *    vii. – neste item, você cria uma situação interessante constrói o algoritmo correspondente.
+        47. Leia uma relação de pacientes de uma clínica, cada um com o nome, o sexo, o peso, a
+        idade e a altura. Para sinalizar o fim da lista será fornecido “fim” no nome do último paciente.
+        Exiba um relatório contendo:
+         i. a quantidade de pacientes.
+         ii. a média de idade dos homens.
+         iii. a quantidade de mulheres com altura entre 1,60 e 1,70 e peso acima de 70kg.
+         iv. a quantidade de pessoas com idade entre 18 e 25.
+         v. o nome do paciente mais velho.
+         vi. o nome da mulher mais baixa.
+        vii. – neste item, você cria uma situação interessante constrói o algoritmo correspondente.
      */
+
     private static final Scanner sc = new Scanner(System.in);
-    // não gosto desse código, mas necessaria se for apenas uma class.
+
     public static void main(String[] args) {
+        Locale.setDefault(Locale.US);
+
         int quantidadePacientes = 0;
         int somaIdadeHomens = 0;
         int quantidadeHomens = 0;
@@ -41,6 +49,7 @@ public class Questao47 {
             System.out.print("Idade: ");
             int idade = Integer.parseInt(sc.nextLine());
 
+            // Quero aceitar entradas com virgula ou ponto
             System.out.print("Peso (kg): ");
             double peso = Double.parseDouble(sc.nextLine());
 

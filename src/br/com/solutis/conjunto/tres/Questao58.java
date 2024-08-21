@@ -1,24 +1,51 @@
 package br.com.solutis.conjunto.tres;
 
+import utils.Data;
+
+import java.sql.SQLOutput;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
+import static utils.UtilsConjunto2.*;
+
+/**
+ * @author Gabriel de Abreu Farias Azevedo
+ */
 public class Questao58 {
-    //58. Leia uma data e uma quantidade de dias, em seguida exiba esta data somada pela
-    //quantidade de dias fornecida. Exemplo: 29/04/2007 + 3 = 02/05/2007.
+
+    /*
+    58. Leia uma data e uma quantidade de dias, em seguida exiba esta data somada pela
+    quantidade de dias fornecida.
+
+    Exemplo: 29/04/2007 + 3 = 02/05/2007.
+     */
+
     private static final Scanner sc = new Scanner(System.in);
-    private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+
     public static void main(String[] args) {
         System.out.print("Por gentileza informe a data: ");
-        String entradaData = sc.nextLine();
-        LocalDate data = LocalDate.parse(entradaData, formatter);
+
+        int dias;
+        byte dia, mes;
+        short ano;
+
+        System.out.print("Digite o dia: ");
+        dia = getDia(sc);
+
+        System.out.print("Digite o mês: ");
+        mes = getMes(sc);
+
+        System.out.print("Digite o ano: ");
+        ano = getAno(sc);
+
+        Data dataObj = new Data(dia, mes, ano);
 
         System.out.println("Quantos dias deseja adicionar?");
-        int dias = sc.nextInt();
+        dias = sc.nextInt();
 
-        LocalDate novaData = data.plusDays(dias);
+        dataObj.avanceDias(dias);
 
-        System.out.println("Nova data será: " + novaData.format(formatter));
+        System.out.println("Data final: " + dataObj);
     }
 }
