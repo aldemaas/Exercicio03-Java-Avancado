@@ -1,7 +1,5 @@
 package br.com.solutis.conjunto.tres;
 
-import java.math.BigInteger;
-
 public class Questao52 {
     //52. A história do rei que e tornou pobre: após perder uma aposta com um súdito, ele teve que
     //pagar uma quantia muito grande em sacos de arroz. A aposta feita anteriormente era que
